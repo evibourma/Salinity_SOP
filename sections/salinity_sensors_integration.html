@@ -363,21 +363,21 @@ commentsRunWhenDOMLoaded(addUtterances);
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="sensors-and-integrations">
-<h1><span class="section-number">3. </span>Sensors and integrations<a class="headerlink" href="#sensors-and-integrations" title="Permalink to this headline">¶</a></h1>
+<span id="sensors-integration"></span><h1><span class="section-number">3. </span>Sensors and integrations<a class="headerlink" href="#sensors-and-integrations" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="ctd-sensors">
-<h2><span class="section-number">3.1. </span>CTD Sensors<a class="headerlink" href="#ctd-sensors" title="Permalink to this headline">¶</a></h2>
-<p>On gliders, currently three types of CTD-sensors are in use (see Table 1).
-CT sensors can be unpumped (sections 2.1.1; 2.2) or pumped (section 2.1.2).
-Unpumped CT sensors have lower power consumption requirements as well as reduced susceptibility to blockages/failures because of the larger throughflow pipe (section 6.3.4).
-There is also reduced background vibration and noise, which is advantageous when measuring microstructure <span id="id1">[<a class="reference internal" href="salinity_references.html#id5">Fer <em>et al.</em>, 2014</a>]</span>.
-However, the disadvantage of the unpumped sensors is in the post processing correction for the effects of thermal-inertia because the flow rate through the inlet is not known and has to be estimated from the glider’s flight model (section 7).
-Pumped CT sensors on the other hand, have a constant through-flow rate, allowing for a simpler correction of thermal-inertia. Nevertheless, both pumped and unpumped sensors require corrections for thermal-inertia (section 7).</p>
+<span id="id1"></span><h2><span class="section-number">3.1. </span>CTD Sensors<a class="headerlink" href="#ctd-sensors" title="Permalink to this headline">¶</a></h2>
+<p>On gliders, currently three types of CTD-sensors are in use (see <a class="reference internal" href="salinity_introduction.html#table1"><span class="std std-ref">Table 1</span></a>).
+CT sensors can be unpumped (<a class="reference internal" href="#unpumped"><span class="std std-ref">Sections 3.1.1.1</span></a>; <a class="reference internal" href="#rbr-legato"><span class="std std-ref">3.1.2</span></a>) or pumped (<a class="reference internal" href="#pumped"><span class="std std-ref">Section 3.1.1.2</span></a>).
+Unpumped CT sensors have lower power consumption requirements as well as reduced susceptibility to blockages/failures because of the larger throughflow pipe (<a class="reference internal" href="salinity_rtqc.html#pump-malfunction"><span class="std std-ref">Section 6.2.4</span></a>).
+There is also reduced background vibration and noise, which is advantageous when measuring microstructure <span id="id2">[<a class="reference internal" href="salinity_references.html#id6">Fer <em>et al.</em>, 2014</a>]</span>.
+However, the disadvantage of the unpumped sensors is in the post processing correction for the effects of thermal-inertia because the flow rate through the inlet is not known and has to be estimated from the glider’s flight model (<a class="reference internal" href="salinity_dmqc.html#dynamic-error-correction"><span class="std std-ref">Section 8.1</span></a>).
+Pumped CT sensors on the other hand, have a constant through-flow rate, allowing for a simpler correction of thermal-inertia. Nevertheless, both pumped and unpumped sensors require corrections for thermal-inertia (<a class="reference internal" href="salinity_dmqc.html#dynamic-error-correction"><span class="std std-ref">Section 8.1</span></a>).</p>
 <div class="section" id="sea-bird">
-<h3><span class="section-number">3.1.1. </span>Sea-Bird<a class="headerlink" href="#sea-bird" title="Permalink to this headline">¶</a></h3>
+<span id="id3"></span><h3><span class="section-number">3.1.1. </span>Sea-Bird<a class="headerlink" href="#sea-bird" title="Permalink to this headline">¶</a></h3>
 <p>Conductivity, temperature and depth (CTD) sensors distributed by Sea-Bird electronics is currently the most widely used sensor on gliders.</p>
 <div class="section" id="unpumped">
-<h4><span class="section-number">3.1.1.1. </span>Unpumped<a class="headerlink" href="#unpumped" title="Permalink to this headline">¶</a></h4>
-<p>The CT-Sail is a free-flushed (unpumped) CTD (SBE41) was the first science payload installed in the Seaglider <span id="id2">[<a class="reference internal" href="salinity_references.html#id6">Janzen and Creed, 2011</a>]</span> and remains widely in use.
+<span id="id4"></span><h4><span class="section-number">3.1.1.1. </span>Unpumped<a class="headerlink" href="#unpumped" title="Permalink to this headline">¶</a></h4>
+<p>The CT-Sail is a free-flushed (unpumped) CTD (SBE41) was the first science payload installed in the Seaglider <span id="id5">[<a class="reference internal" href="salinity_references.html#id7">Janzen and Creed, 2011</a>]</span> and remains widely in use.
 The separate temperature and conductivity sensors are installed on the upper side of the glider pressure hull and integrated with the internal glider data acquisition and flight control system.
 On the CT-Sail the temperature sensor is positioned beneath and parallel to the conductivity sensor.
 The conductivity sensor itself is positioned within a metal housing with hole cut-outs to allow for flushing. The pressure sensor is located ~40 cm in front of the thermistor, requiring a slight spatial alignment with the sensors.
@@ -390,10 +390,10 @@ The sampling speed is set by the user, typically to 2 Hz.</p>
 </div>
 </div>
 <div class="section" id="pumped">
-<h4><span class="section-number">3.1.1.2. </span>Pumped<a class="headerlink" href="#pumped" title="Permalink to this headline">¶</a></h4>
+<span id="id6"></span><h4><span class="section-number">3.1.1.2. </span>Pumped<a class="headerlink" href="#pumped" title="Permalink to this headline">¶</a></h4>
 <p>The <a class="reference external" href="https://www.seabird.com/glider-payload-ctd-gpctd/product?id=60762467712">Glider Payload CTD (GPCTD)</a> is a modular, self-contained CTD with memory and an integrated pump.
 The GPCTD improves on the CT-Sail through simpler installation requirements as well as a pump which allows for constant flow through the conductivity sensor.
-The CT sensors are ducted and pumped on the GPCTD with the intake positioned to minimize measurement errors caused by the vehicle’s thermally contaminated boundary flow <span id="id3">[<a class="reference internal" href="salinity_references.html#id6">Janzen and Creed, 2011</a>]</span>.
+The CT sensors are ducted and pumped on the GPCTD with the intake positioned to minimize measurement errors caused by the vehicle’s thermally contaminated boundary flow <span id="id7">[<a class="reference internal" href="salinity_references.html#id7">Janzen and Creed, 2011</a>]</span>.
 Power consumption is 175 mW when continuously recording at 1 Hz.</p>
 <p>Sea-Bird provided GPCTD accuracy ratings are: Conductivity: ± 0.0003 S m<sup>-3</sup> over a range of 0 to 9 S m<sup>-3</sup>; Temperature:  ± 0.002<sup>o</sup>C over a range of -5 - 42<sup>o</sup>C and Pressure: ± 0.1% of full scale range, up to 2000 m.</p>
 <div class="figure align-default" id="slocum-ctd">
@@ -404,7 +404,7 @@ Power consumption is 175 mW when continuously recording at 1 Hz.</p>
 </div>
 </div>
 <div class="section" id="rbrlegato-sup-3-sup">
-<h3><span class="section-number">3.1.2. </span>RBR<em>legato</em><sup>3</sup><a class="headerlink" href="#rbrlegato-sup-3-sup" title="Permalink to this headline">¶</a></h3>
+<span id="rbr-legato"></span><h3><span class="section-number">3.1.2. </span>RBR<em>legato</em><sup>3</sup><a class="headerlink" href="#rbrlegato-sup-3-sup" title="Permalink to this headline">¶</a></h3>
 <p>The <a class="reference external" href="https://rbr-global.com/products/oem/rbrlegato">RBR<em>legato</em><sup>3</sup></a> is an integrated CTD and logger package designed specifically for gliders with a hydrodynamic profile.
 It is available in slow (1 s) and fast (0.1 s) response temperature options as well as normal (2 Hz) and fast (16 Hz) sampling speeds.
 The RBR<em>legato</em><sup>3</sup>, unlike the previously mentioned sensors, has an inductive cell rather than conductive, with significant implications for sensor calibration of salinity.
@@ -416,17 +416,17 @@ As a logger, the RBR<em>legato</em><sup>3</sup> can also integrate other RBR sen
 </div>
 </div>
 <div class="section" id="sensor-integratons-with-gliders">
-<h2><span class="section-number">3.2. </span>Sensor integratons with gliders<a class="headerlink" href="#sensor-integratons-with-gliders" title="Permalink to this headline">¶</a></h2>
+<span id="integration"></span><h2><span class="section-number">3.2. </span>Sensor integratons with gliders<a class="headerlink" href="#sensor-integratons-with-gliders" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="mounting-location">
-<h3><span class="section-number">3.2.1. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
+<span id="id8"></span><h3><span class="section-number">3.2.1. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="spray">
-<h4><span class="section-number">3.2.1.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
+<span id="id9"></span><h4><span class="section-number">3.2.1.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>expert missing</p></li>
 </ul>
 </div>
 <div class="section" id="seaglider">
-<h4><span class="section-number">3.2.1.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
+<span id="id10"></span><h4><span class="section-number">3.2.1.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
 <p>On Seagliders the Sea-Bird electronics supplied CT-Sail is mounted on the upper side of the glider pressure hull.
 Flow past the CT sensors relies solely on the movement of the glider.
 Sea-Bird no longer lists the CT-Sail but is manufactured on request by integrators.
@@ -438,7 +438,7 @@ The GPCTD is installed between the pressure hull and the fairing in the aft-floo
 </div>
 </div>
 <div class="section" id="slocum">
-<h4><span class="section-number">3.2.1.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
+<span id="id11"></span><h4><span class="section-number">3.2.1.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
 <p>On slocum gliders, an adaptation of the GPCTD, the Slocum Glider CTD, is installed beneath a wing on the lateral side of the glider.</p>
 <div class="figure align-default" id="slocum-ctd-installed">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/giddy_slocum_glider_CTD.png"><img alt="SLOCUM-CTD-INSTALLED" class="bg-primary mb-1" src="../_images/giddy_slocum_glider_CTD.png" style="width: 400px;" /></a>
@@ -446,8 +446,8 @@ The GPCTD is installed between the pressure hull and the fairing in the aft-floo
 </div>
 </div>
 <div class="section" id="seaexplorer">
-<h4><span class="section-number">3.2.1.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
-<p>On SeaExplorer gliders, the CTDs are typically installed in the flooded nose cone area (Fig X left), though the RBR<em>legato</em><sup>3</sup> can also be configured to be installed through one of the top/side “puck” ports to leave the nose available for other sensors (e.g. acoustic payloads) as shown in Fig X. right.</p>
+<span id="id12"></span><h4><span class="section-number">3.2.1.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
+<p>On SeaExplorer gliders, the CTDs are typically installed in the flooded nose cone area (<a class="reference internal" href="#rbr-legato-seaexplorer"><span class="std std-numref">Fig. 3.5</span></a>, left), though the RBR<em>legato</em><sup>3</sup> can also be configured to be installed through one of the top/side “puck” ports to leave the nose available for other sensors (e.g. acoustic payloads) as shown in <a class="reference internal" href="#rbr-legato-seaexplorer"><span class="std std-numref">Fig. 3.5</span></a>, right.</p>
 <div class="figure align-default" id="rbr-legato-seaexplorer">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/queste_clark_rbr_legato.png"><img alt="RBR_LEGATO_SEAEXPLORER" class="bg-primary mb-1" src="../_images/queste_clark_rbr_legato.png" style="width: 400px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 3.5 </span><span class="caption-text">RBR<em>legato</em><sup>3</sup> CTD on SeaExplorer (Image credits: Bastien Queste (left) and Clark Richards (right))</span><a class="headerlink" href="#rbr-legato-seaexplorer" title="Permalink to this image">¶</a></p>
@@ -459,7 +459,7 @@ The GPCTD is installed between the pressure hull and the fairing in the aft-floo
 </div>
 </div>
 <div class="section" id="petrel-glider">
-<h4><span class="section-number">3.2.1.5. </span>Petrel Glider<a class="headerlink" href="#petrel-glider" title="Permalink to this headline">¶</a></h4>
+<span id="petrel"></span><h4><span class="section-number">3.2.1.5. </span>Petrel Glider<a class="headerlink" href="#petrel-glider" title="Permalink to this headline">¶</a></h4>
 <p>The small-size RBR<em>legato</em><sup>3</sup> CTD is embedded in the front fairing of the Petrel glider.
 The CT sensors are exposed outside the fairing to sense the ambient seawater.
 This integration design can minimize the impact of the CTD on the streamline of gliders.</p>
@@ -470,7 +470,7 @@ This integration design can minimize the impact of the CTD on the streamline of 
 </div>
 </div>
 <div class="section" id="sensor-storage">
-<h3><span class="section-number">3.2.2. </span>Sensor storage<a class="headerlink" href="#sensor-storage" title="Permalink to this headline">¶</a></h3>
+<span id="id13"></span><h3><span class="section-number">3.2.2. </span>Sensor storage<a class="headerlink" href="#sensor-storage" title="Permalink to this headline">¶</a></h3>
 <p>Sensors are stored dry with sensor caps on or tape to cover open valves, and protected from dust and freeze.</p>
 </div>
 </div>
